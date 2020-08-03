@@ -1,0 +1,1 @@
+This project was bootstrapped with [Create React Tailwind App](https://github.com/gigincg/create-react-tailwind-app).
