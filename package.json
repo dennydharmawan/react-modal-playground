@@ -6,8 +6,10 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "customize-cra": "^1.0.0",
     "postcss-import": "^12.0.1",
     "react": "^16.13.1",
+    "react-app-rewired": "^2.1.6",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
     "tailwindcss": "^1.6.1"
@@ -16,9 +18,9 @@
     "purge:css": "cross-env NODE_ENV=production postcss src/tailwind.css -o src/index.css",
     "build:css": "postcss src/tailwind.css -o src/index.css",
     "watch:css": "postcss src/tailwind.css -o src/index.css -w",
-    "start": "npm run build:css && react-scripts start",
-    "build": "npm run purge:css && react-scripts build",
-    "test": "react-scripts test",
+    "start": "npm run build:css && REACT_APP_STAGE=dev react-app-rewired start",
+    "build": "npm run purge:css && react-app-rewired build",
+    "test": "react-app-rewired test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -39,8 +41,10 @@
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^2.3.0",
     "autoprefixer": "^9.8.6",
+    "babel-plugin-react-html-attrs": "^3.0.5",
     "cross-env": "^7.0.2",
     "cssnano": "^4.1.10",
-    "postcss-cli": "^7.1.1"
+    "postcss-cli": "^7.1.1",
+    "tailwindcss-debug-screens": "^1.1.0"
   }
 }

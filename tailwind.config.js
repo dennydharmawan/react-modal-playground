@@ -1,10 +1,10 @@
 module.exports = {
   important: true,
   //Purging for Production is configured in PostCSS Config
-  purge:false,
+  purge: false,
   theme: {
     extend: {},
   },
   variants: {},
-  plugins: [],
+  plugins: [require("tailwindcss-debug-screens")],
 };
