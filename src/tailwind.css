@@ -2,16 +2,4 @@
 
 @import "tailwindcss/components";
 
-.ReactModal__Overlay {
-  @apply bg-opacity-0 transition-all duration-1000 ease-in-out;
-}
-
-.ReactModal__Overlay--after-open {
-  @apply bg-opacity-50;
-}
-
-.ReactModal__Overlay--before-close {
-  @apply bg-opacity-0;
-}
-
 @import "tailwindcss/utilities";
