@@ -6,5 +6,9 @@ module.exports = {
     extend: {},
   },
   variants: {},
-  plugins: [require("tailwindcss-debug-screens")],
+  plugins: [
+    require("tailwindcss-debug-screens"),
+    require("tailwindcss-bg-alpha")(),
+  ],
+  alphaColors: ["gray.600"],
 };
